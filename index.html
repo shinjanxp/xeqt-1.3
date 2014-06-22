@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>XeQt|Home</title>
+<link rel="stylesheet" href="css/main.css" type="text/css" />
+<link rel="stylesheet" href="css/globe.css" type="text/css" />
+</head>
+
+<body>
+<nav>
+<span class="logo">XeQt</span>
+</nav>
+<div id="globecontainer">
+<section class="stage">
+
+    <figure class="ball" data-start="background-position: -100px 0;" data-end="background-position: -500px 0;"  ><span class="shadow"></span></figure>
+   
+  </section>
+  </div>
+  
+
+	<div id="container">
+  <section class="content" id="cover">
+  <h1>XeQt</h1>
+  <p>Do More With Less</p>
+  </section>
+  
+  <section class="content" id="about">
+  <h1>ABOUT US</h1>
+  <p>
+  XeQt is a group of 2nd generation technology developers whose motto, "Do More With Less" drives every decision, design and deployment mechanism of a group of highly skilled engineers. XeQt is based in and operates from Kolkata, India. We are strong promoters of open-source technology, minimalistic designs and the belief that great isn't good enough. With XeQt, you can always expect to be surprised.
+  </p>
+  </section>
+  
+  <section class="content" id="stuff">
+  <h1>OUR STUFF</h1>
+  <div id="stage">
+  <iframe class="frames" src="http://www.renderbit.com"></iframe>
+  <iframe class="frames" src="http://www.cryllsoft.com"></iframe>
+  <iframe class="frames" src="http://www.geekyhardware.com"></iframe>
+  <iframe class="frames" src="http://www.techdcode.com"></iframe>
+  <br />
+  <p class="info">RENDERBIT <br />web design simplified</p>
+  <p class="info">CRYLLSOFT <br />software for all</p>
+  <p class="info">GEEKYHARDWARE <br />the name says it all</p>
+  <p class="info">TECHDCODE <br />tutorials and workshops</p>
+  </div>
+  </section>
+  
+  <section class="content" id="contact">
+  <h1>REACH OUT TO US</h1>
+  <p>
+  Based in Asansol and operating from Kolkata.
+  </p>
+  </section>
+  
+  
+ </div>
+  <script type="text/javascript" src="js/jquery-1.11.1.js" ></script>
+  <script type="text/javascript" src="js/skrollr.min.js" ></script>
+  <script>
+
+  var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+window.onload=function(){
+	$('.content').height(0.8*h);
+	  var s=skrollr.init();
+	  if(s.isMobile())
+	  {
+		  $('.ball').remove();
+	  }
+};
+  </script>
+</body>
+</html>

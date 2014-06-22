@@ -1,0 +1,163 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face
+{
+font-family: Interstate;
+src:url(../Interstate%20Black.ttf);
+}
+body{
+	padding:0;
+	margin:0;
+}
+nav{
+	position:fixed;
+	z-index:100;
+	width:100%;
+	top:0;
+	height:50px;
+	background-color:black;
+
+}
+nav span{
+	bottom:0;
+	position:absolute;
+	font-size:24px;
+	color:white;
+	margin:10px 10px 10px 50px;
+}
+.logo{
+	font-family:Interstate, Verdana, Geneva, sans-serif;
+}
+.content{
+	width:100%;
+	position:relative;
+	padding:50px;
+	font-family:Interstate, Verdana, Geneva, sans-serif;
+}
+#cover{
+		z-index:-10;
+		padding-top:100px;
+		background: #617c8f; /* Old browsers */
+background: -moz-linear-gradient(top,  #617c8f 44%, #adb3b9 64%, #cfd3db 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(44%,#617c8f), color-stop(64%,#adb3b9), color-stop(100%,#cfd3db)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #617c8f 44%,#adb3b9 64%,#cfd3db 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #617c8f 44%,#adb3b9 64%,#cfd3db 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #617c8f 44%,#adb3b9 64%,#cfd3db 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #617c8f 44%,#adb3b9 64%,#cfd3db 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#617c8f', endColorstr='#cfd3db',GradientType=0 ); /* IE6-9 */
+}
+h1{
+	font-size:100px;
+	margin-left:10%;
+	margin-top:0;
+	top:10%;
+	color:#eee;
+}
+#cover p{
+	font-size:50px;
+	margin-left:10%;
+	top:40%;
+	color:#eee;
+	width:auto;
+}
+#about{
+	z-index:-10;
+	background: #4c6270; /* Old browsers */
+background: -moz-linear-gradient(top,  #4c6270 44%, #838d95 64%, #99a3b3 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(44%,#4c6270), color-stop(64%,#838d95), color-stop(100%,#99a3b3)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #4c6270 44%,#838d95 64%,#99a3b3 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #4c6270 44%,#838d95 64%,#99a3b3 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #4c6270 44%,#838d95 64%,#99a3b3 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #4c6270 44%,#838d95 64%,#99a3b3 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c6270', endColorstr='#99a3b3',GradientType=0 ); /* IE6-9 */
+}
+#about p,#contact p{
+	font-size:20px;
+	margin-left:10%;
+	top:40%;
+	color:#eee;
+	width:40%;
+}
+#stuff{
+	background: #394b55; /* Old browsers */
+background: -moz-linear-gradient(top,  #394b55 42%, #9099a0 64%, #bcc4ce 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(42%,#394b55), color-stop(64%,#9099a0), color-stop(100%,#bcc4ce)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #394b55 42%,#9099a0 64%,#bcc4ce 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #394b55 42%,#9099a0 64%,#bcc4ce 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #394b55 42%,#9099a0 64%,#bcc4ce 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #394b55 42%,#9099a0 64%,#bcc4ce 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#394b55', endColorstr='#bcc4ce',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+#contact{
+	z-index:-10;
+	background: #1b2429; /* Old browsers */
+background: -moz-linear-gradient(top,  #1b2429 42%, #576067 64%, #6f7f95 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(42%,#1b2429), color-stop(64%,#576067), color-stop(100%,#6f7f95)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #1b2429 42%,#576067 64%,#6f7f95 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #1b2429 42%,#576067 64%,#6f7f95 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #1b2429 42%,#576067 64%,#6f7f95 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #1b2429 42%,#576067 64%,#6f7f95 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b2429', endColorstr='#6f7f95',GradientType=0 ); /* IE6-9 */
+
+}
+
+ div#stage{ perspective: 1000px; 
+ -moz-perspective: 1000px; 
+ -webkit-perspective: 1000px; 
+ -ms-perspective: 1000px; 
+ 
+ -webkit-perspective-origin: 50% 50%;
+ padding-left:10%;
+ } 
+ 
+ .frames {
+ width:20%;
+ height:60%;
+ -webkit-transition-property: transform; 
+-moz-transition-property: transform;
+-ms-transition-property: transform;
+transition-property: transform;
+
+ transition-duration: 0.7s;
+ -webkit-transition-duration: 0.7;
+ -moz-transition-duration: 0.7s;
+ -ms-transition-duration: 0.7s;
+ 
+  transform: matrix3d(0.7109, 0, -0.703279, 0, 0, 1, 0, 0, 0.703279, 0, 0.7109, 0, 0, 0, 0, 1);
+  -webkit-transform: matrix3d(0.7109, 0, -0.703279, 0, 0, 1, 0, 0, 0.703279, 0, 0.7109, 0, 0, 0, 0, 1);
+  -moz-transform: matrix3d(0.7109, 0, -0.703279, 0, 0, 1, 0, 0, 0.703279, 0, 0.7109, 0, 0, 0, 0, 1);
+  -ms-transform: matrix3d(0.7109, 0, -0.703279, 0, 0, 1, 0, 0, 0.703279, 0, 0.7109, 0, 0, 0, 0, 1);
+  
+   box-reflect:below 15px gradient(linear, left top, left bottom, from(transparent), color-stop(0.7, transparent), to(#ff0000));
+   -moz-box-reflect:below 15px -moz-gradient(linear, left top, left bottom, from(transparent), color-stop(0.7, transparent), to(#ff0000));
+	-webkit-box-reflect: below 15px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.7, transparent), to(#ff0000));
+   -ms-box-reflect:below 15px -ms-gradient(linear, left top, left bottom, from(transparent), color-stop(0.7, transparent), to(#ff0000));
+ } 
+ .frames:hover { transition-property: transform;
+ -webkit-transition-property: transform;
+ -moz-transition-property: transform;
+ -ms-transition-property: transform;
+ 
+ transition-duration: 0.7s; 
+ -webkit-transition-duration: 0.7s; 
+ -moz-transition-duration: 0.7s; 
+ -ms-transition-duration: 0.7s; 
+ 
+ transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 200, 1); 
+ -webkit-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 200, 1); 
+ -moz-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 200, 1); 
+ -ms-transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 200, 1); 
+ 
+ } 
+.info{
+	width:20%;
+	text-align:center;
+	margin:0;
+	display:inline-block;
+	font-size:20px;
+	margin-top:100px;
+}
