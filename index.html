@@ -15,7 +15,7 @@
 <section class="stage">
 
     <figure class="ball" data-start="background-position: -100px 0;" data-end="background-position: -500px 0;"  ><span class="shadow"></span></figure>
-   
+ 
   </section>
   </div>
   
@@ -36,16 +36,17 @@
   <section class="content" id="stuff">
   <h1>OUR STUFF</h1>
   <div id="stage">
-  <iframe class="frames" src="http://www.renderbit.com"></iframe>
+  <img class="frames" src="images/renderbit.svg"></img>
   <iframe class="frames" src="http://www.cryllsoft.com"></iframe>
-  <iframe class="frames" src="http://www.geekyhardware.com"></iframe>
-  <iframe class="frames" src="http://www.techdcode.com"></iframe>
+  <img class="frames" src="images/geeky.svg"></img>
+  <img class="frames" src="images/techdcode.svg"></img>
   <br />
   <p class="info">RENDERBIT <br />web design simplified</p>
   <p class="info">CRYLLSOFT <br />software for all</p>
   <p class="info">GEEKYHARDWARE <br />the name says it all</p>
   <p class="info">TECHDCODE <br />tutorials and workshops</p>
   </div>
+
   </section>
   
   <section class="content" id="contact">
@@ -58,17 +59,19 @@
   
  </div>
   <script type="text/javascript" src="js/jquery-1.11.1.js" ></script>
-  <script type="text/javascript" src="js/skrollr.min.js" ></script>
-  <script>
-
+  <script type="text/javascript" src="js/skrollr.min.js"></script>
+<script type="text/javascript">
+	
   var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+  
 window.onload=function(){
-	$('.content').height(0.8*h);
-	  var s=skrollr.init();
-	  if(s.isMobile())
-	  {
-		  $('.ball').remove();
-	  }
+$('.content').height(0.8*h);
+var s = skrollr.init();
+if(s.isMobile())
+	s.destroy();
+else
+	alert("not mobile");
+	
 };
   </script>
 </body>
