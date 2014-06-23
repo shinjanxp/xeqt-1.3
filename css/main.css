@@ -10,7 +10,6 @@ body{
 	padding:0;
 	margin:0;
 	overflow-x:hidden;
-	z-index:-20;
 }
 nav{
 	position:fixed;
@@ -31,9 +30,7 @@ nav span{
 .logo{
 	font-family:Interstate, Verdana, Geneva, sans-serif;
 }
-#container{
-	z-index:-20;
-}
+
 .content{
 	width:100%;
 	position:relative;
@@ -41,7 +38,7 @@ nav span{
 	font-family:Interstate, Verdana, Geneva, sans-serif;
 }
 #cover{
-		z-index:-10;
+		z-index:1;
 		padding-top:300px;
 		
 		background: #617c8f; /* Old browsers */
@@ -71,7 +68,7 @@ h1{
 	width:auto;
 }
 #about{
-	z-index:-10;
+	z-index:1;
 	background: #4c6270; /* Old browsers */
 background: -moz-linear-gradient(top,  #4c6270 44%, #838d95 64%, #99a3b3 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(44%,#4c6270), color-stop(64%,#838d95), color-stop(100%,#99a3b3)); /* Chrome,Safari4+ */
@@ -89,6 +86,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c6270', end
 	width:40%;
 }
 #stuff{
+	z-index:15;
 	background: #394b55; /* Old browsers */
 background: -moz-linear-gradient(top,  #394b55 42%, #9099a0 64%, #bcc4ce 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(42%,#394b55), color-stop(64%,#9099a0), color-stop(100%,#bcc4ce)); /* Chrome,Safari4+ */
@@ -102,7 +100,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#394b55', end
 
 
 #contact{
-	z-index:-10;
+	z-index:1;
 	background: #1b2429; /* Old browsers */
 background: -moz-linear-gradient(top,  #1b2429 42%, #576067 64%, #6f7f95 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(42%,#1b2429), color-stop(64%,#576067), color-stop(100%,#6f7f95)); /* Chrome,Safari4+ */
@@ -129,7 +127,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b2429', end
  .frames {
  width:20%;
  height:60%;
- z-index:49;
  background-color:#099;
  -webkit-transition-property: transform; 
 -moz-transition-property: transform;
@@ -160,7 +157,7 @@ transition-property: transform;
  -webkit-transition-duration: 0.7s; 
  -moz-transition-duration: 0.7s; 
  -ms-transition-duration: 0.7s; 
- z-index:50;
+ 
  transform: matrix3d(1, 0, 0, 0,
  					 0, 1, 0, 0,
 					 0, 0, 1, 0,
@@ -184,8 +181,8 @@ transition-property: transform;
 
 #map{
 	left:30%;
-	top:50%;
+	bottom:10%;
 	position:absolute;
-	margin:70px 70px 70px 70px;
-	background-image:url(../images/map-background.svg);
+	border: 10px solid black;
+	opacity:0;
 }

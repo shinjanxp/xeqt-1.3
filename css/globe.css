@@ -19,7 +19,7 @@
   height: 100%;
   border-radius: 50%;
   box-shadow: -40px 10px 70px 10px rgba(0,0,0,0.5) inset;
-  z-index: 2;
+  z-index: 12;
 }
 
 .ball:after {
@@ -53,7 +53,7 @@
   -ms-transform: rotateX(90deg) translateZ(-150px);
   -o-transform: rotateX(90deg) translateZ(-150px);
   transform: rotateX(90deg) translateZ(-150px);
-  z-index: -1;
+  z-index: 9;
 }
 globecontainer {
   width: 300px;
@@ -84,6 +84,7 @@ globecontainer {
   -ms-perspective-origin: 50% 50%;
   -o-perspective-origin: 50% 50%;
   perspective-origin: 50% 50%;
+  z-index:10;
 }
 
 #point{
@@ -94,6 +95,6 @@ globecontainer {
   position:absolute;
   top:0;
   left:0;
-  z-index:10;
+  z-index:20;
   opacity:0;
 }

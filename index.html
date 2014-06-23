@@ -11,11 +11,12 @@
 <nav>
 <span class="logo">XeQt</span>
 </nav>
+<div id="skrollr-body">
 <div id="globecontainer">
 <section class="stage">
 
     <figure class="ball" data-start="background-position: -100px 0;" data-end="background-position: -500px 0;"  ><span class="shadow"></span></figure>
- <img id="point" src="images/point.svg" data-start="opacity:0" data-100-end="opacity:0;" data-end="opacity:1"/>
+ <img id="point" src="images/point.svg" data-start="opacity:0" data-200-end="opacity:0;" data-end="opacity:1"/>
   </section>
   </div>
   
@@ -36,7 +37,9 @@
   <h1>OUR STUFF</h1>
   <div id="stage">
   <img class="frames" src="images/renderbit.svg"></img>
+  <!--
   <iframe class="frames" src="http://www.cryllsoft.com"></iframe>
+  -->
   <img class="frames" src="images/geeky.svg"></img>
   <img class="frames" src="images/techdcode.svg"></img>
   <br />
@@ -45,7 +48,6 @@
   <p class="info">GEEKYHARDWARE <br />the name says it all</p>
   <p class="info">TECHDCODE <br />tutorials and workshops</p>
   </div>
-
   </section>
   
   <section class="content" id="contact">
@@ -53,25 +55,29 @@
   <p>
   Based in Asansol and operating from Kolkata.
   </p>
-<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3685.6452920865713!2d88.379239!3d22.5174878!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0276ccaf7b43ff%3A0x66b265603f9ad3cd!2sBanku+Bihari+Chatterjee+Rd%2C+Kasba!5e0!3m2!1sen!2sin!4v1403467832272" width="500" height="300" frameborder="0" style="border:0"></iframe>
+<iframe id="map" data-start="transform:scale(0.01); left:60%; opacity:0; top:5%" data-200-end="transform:scale(0.01); left:60%; opacity:0; top:5%" data-end="transform:scale(1); left:30%; opacity:1; top:50%;"  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3685.6452920865713!2d88.379239!3d22.5174878!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0276ccaf7b43ff%3A0x66b265603f9ad3cd!2sBanku+Bihari+Chatterjee+Rd%2C+Kasba!5e0!3m2!1sen!2sin!4v1403467832272" width="500" height="300" frameborder="0" style="border:0"></iframe>
   </section>
   
-  
+  </div>
   <script type="text/javascript" src="js/jquery-1.11.1.js" ></script>
   <script type="text/javascript" src="js/skrollr.min.js"></script>
+  <script type="text/javascript" src="js/detectmobilebrowser.js"></script>
+  
+  <!--<script type="text/javascript" src="js/skrollr.js"></script>-->
+  
 <script type="text/javascript">
 	
   var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
+  $(document).ready(function() {
+  $('.content').height(0.8*h);
   
-window.onload=function(){
-$('.content').height(0.8*h);
-var s = skrollr.init();
-if(s.isMobile())
-	s.destroy();
-else
-	alert("not mobile");
+  if(jQuery.browser.mobile)
+  	$('.content').height(h);
 	
-};
+	  var s=skrollr.init();
+});
+
   </script>
 </body>
 </html>
