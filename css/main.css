@@ -153,7 +153,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1b2429', end
  .frames {
  width:20%;
  height:60%;
- background-color:#099;
  cursor:pointer;
  -webkit-transition-property: transform; 
 -moz-transition-property: transform;

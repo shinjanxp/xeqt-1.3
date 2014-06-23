@@ -6,7 +6,7 @@
   border-radius: 50%;
   position: relative;
   -webkit-transform-style: preserve-3d;
-  background: url('http://hop.ie/balls/images/world-map-one-color.png') repeat-x;
+  background: url('../images/worldmap-full.png') repeat-x;
   background-size: auto 100%;
 }
 
